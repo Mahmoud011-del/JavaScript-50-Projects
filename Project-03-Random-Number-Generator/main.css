@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to left, #b8e3fa, #a8ccf9);
+  font-family: "Poppins", sans-serif;
+}
+
+.parant {
+  background-color: #dce3eb;
+  width: 550px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  margin: 90px auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px 0 #33455a;
+}
+.title {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.title span {
+  font-size: 32px;
+  font-weight: 700;
+}
+.value {
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+  line-height: 1.8;
+}
+.value h4 {
+  font-size: 20px;
+}
+.value-of-number {
+  font-size: 35px;
+  font-weight: bold;
+}
+.min-max {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+.min-max span {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.min {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.max {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr {
+  display: block;
+  border: none;
+  border-top: 1px solid #999;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.generator {
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+  margin: 25px auto;
+  border-radius: 7px;
+  border: 2px solid #000;
+  cursor: pointer;
+  font-size: 18px;
+}
+button:hover {
+  background-color: #b8e3fa;
+}
+input {
+  width: 10ch;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #999;
+  background-color: #e8dfdf;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus {
+  outline: 0;
+}

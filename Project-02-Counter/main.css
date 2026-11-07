@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(29, 17, 41);
+  font-family: "Orbitron", sans-serif;
+}
+.parent {
+  background-color: rgb(125, 117, 133);
+  width: 350px;
+  height: 500px;
+  border-radius: 25px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.parent_of_operator {
+  display: flex;
+  gap: 40px;
+}
+h1 {
+  color: #5936cc;
+  text-align: center;
+  margin-block: 20px;
+}
+div {
+  font-size: 100px;
+}
+button {
+  width: 50px;
+  height: 40px;
+  background-color: #0f172a;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+button i {
+  font-size: 25px;
+  color: #6c3bff;
+}

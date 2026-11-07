@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #a78bfa, #e9d5ff, #a78bfa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.currenthour {
+  background-color: #493a74;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.clock {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.hours,
+.minutes {
+  font-size: 90px;
+  color: azure;
+}
+.hours::after {
+  content: ":";
+  color: #a78bfa;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+b {
+  font-size: 30px;
+  color: #a78bfa;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.date p {
+  font-size: 30px;
+  color: #dcdce3;
+}
+
+.day::after {
+  content: ",";
+}
+.month::after {
+  content: ",";
+}
+.numofday::after {
+  content: ",";
+}
+
+.greeting {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #a78bfa, #e9d5ff, #a78bfa);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 12px;
+  animation: fadeIn 0.7s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.greeting::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background: #a78bfa;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #a78bfa;
+}
